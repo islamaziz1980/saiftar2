@@ -1,0 +1,522 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>إفطار الصائم</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!-- Utility classes for CSS -->
+
+<link rel="stylesheet" href="css/main2.css">
+  <!-- Custom stylesheet -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/intlTelInput.css">
+  <!-- Script that makes the sheet work -->
+  <script src="js/main.js" defer></script>
+    <!-- Bootstrap -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+    <script src="js/cart.js" defer></script>
+  </head>
+  <body>
+  <header>
+    <div class="container-fulid head-bg-cont">
+      <div class="row head-bg"></div>
+      <div class="row tioz">
+        <h2 class="text-center">ساهم في إفطار أسرة طوال شهر رمضان </h2>
+      </div>
+    </div>
+  </header>
+  <section class=" container donat-pr">
+    <div class="row">
+        <div class="col-md-6 col-sm-12 col-xs-12 arob">
+          <div class="box-act">
+            <img id="myImage" src="img/1cart.svg" class="img-responsive carto">
+            <div class="box-buttonz">
+              <div class="list-group list-group-horizontal">
+               <a href="#" id="linkone"  onclick=one(); class="list-group-item salot active">
+                 <p>1 دينار</p>
+                <span>سهم السلة</span>
+               </a>
+               <a href="#" id="linkseven"  onclick=seven();  class="list-group-item">
+                7.5 دينار
+                 <br><span>تكفي أسبوع</span>
+               </a>
+               <a href="#" id="linkfifteen"  onclick=fifteen(); class="list-group-item">
+                15 دينار
+                 <br><span>تكفي نصف شهر</span>
+               </a>
+               <a href="#" id="linkthirty"  onclick=thirty(); class="list-group-item">
+                 30 دينار
+                 <br><span>تكفي شهر</span>
+               </a>
+             </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12 col-xs-12 ">
+          <div class="box-formoz">
+          <form>
+            <div class="form-group bonm  col-md-6 col-sm-12 col-xs-12 arob">
+              <label for="exampleInputEmail1">الدولة</label>
+              <select class="form-control minimal">
+                <option> إختر الدولة<i class="fa-solid fa-location-dot fa2"></i></option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+            <div class="form-group col-md-6 col-sm-12 col-xs-12">
+              <label for="exampleInputPassword1" class="">عدد الأسر</label>
+              <input type="number" id="qty_input" class="form-control form-control-sm" value="1" min="1">
+            </div>
+              <div class="form-group col-md-12 col-sm-12 col-xs-12 tot-don">
+                <p><span>المبلغ الكلي:</span> 30 دينار</p>
+              </div>
+              <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                <label for="exampleFormControlTextarea1" class="">ملاحظاتك</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">اذا كنت شاركت مع الرحمه العاملة في بناء مسجد برجاء ذكر اسمه او رقمه</textarea>
+              </div>
+            <div class="form-group col-md-12 col-sm-12 col-xs-12">
+            <a type="button" id="open-sheet" aria-controls="sheet" class="btn btn-default  dont-butt">تبرع الآن</a>
+            <a id="c-but" type="button" data-toggle="modal" data-target="#squarespaceModal" class="btn btn-default  carto-butt">
+              <span class="glyphicon glyphicon-shopping-cart icob"></span> أضف للعربة
+            </a>
+              </div>
+            </form>
+          </div>
+        </div>
+    </div>
+  </section>
+<section id= "proj-info">
+  <div class="container">
+  <ul class="nav nav-tabs nav-justified">
+         <div class="panel-heading">
+                 <ul class="nav nav-tabs">
+                     <li class="active"><a href="#tab1default" data-toggle="tab">اعرف المزيد</a></li>
+                     <li><a href="#tab2default" data-toggle="tab">تقارير المشروع</a></li>
+                 </ul>
+         </div>
+         <div class="panel-body">
+             <div class="tab-content">
+                 <div class="tab-pane fade in active" id="tab1default">
+                   <!-- content tab1 -->
+                  <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                            <h4 class="panel-title">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <i class="more-less glyphicon glyphicon-triangle-bottom"></i>
+                                    السؤال الأول
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                            <div class="panel-body">
+                              قصف المسرح واستمر الإتحاد في, ذات أسيا للغزو، الخطّة و, الآخر لألمانيا جهة بل. في سحقت هيروشيما البريطاني يتم, غريمه باحتلال الأيديولوجية، في فصل, دحر وقرى لهيمنة الإيطالية ٣٠. استبدال استسلام القاذفات عل مما. ببعض مئات وبلجيكا، قد أما, قِبل الدنمارك حتى كل, العمليات اليابانية انه أن.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingTwo">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <i class="more-less glyphicon glyphicon-triangle-bottom"></i>
+                                السؤال اثاني
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                            <div class="panel-body">
+                              قصف المسرح واستمر الإتحاد في, ذات أسيا للغزو، الخطّة و, الآخر لألمانيا جهة بل. في سحقت هيروشيما البريطاني يتم, غريمه باحتلال الأيديولوجية، في فصل, دحر وقرى لهيمنة الإيطالية ٣٠. استبدال استسلام القاذفات عل مما. ببعض مئات وبلجيكا، قد أما, قِبل الدنمارك حتى كل, العمليات اليابانية انه أن.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingThree">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <i class="more-less glyphicon glyphicon-triangle-bottom"></i>
+                                  السؤال الثالث
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                            <div class="panel-body">
+                              قصف المسرح واستمر الإتحاد في, ذات أسيا للغزو، الخطّة و, الآخر لألمانيا جهة بل. في سحقت هيروشيما البريطاني يتم, غريمه باحتلال الأيديولوجية، في فصل, دحر وقرى لهيمنة الإيطالية ٣٠. استبدال استسلام القاذفات عل مما. ببعض مئات وبلجيكا، قد أما, قِبل الدنمارك حتى كل, العمليات اليابانية انه أن.
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div><!-- panel-group -->
+
+                   <!-- end of content tab 1 -->
+
+                 </div>
+                 <div class="tab-pane fade" id="tab2default">
+                   <div class="row proj-reports">
+                    <div class="col-md-2 col-sm-3 col-xs-6 rido">
+                      <div class="thumbnail">
+                        <img src="img/project.png" class="img-responsive" alt="project">
+                        <div class="caption">
+                          <h3>تقرير إفطار صائم 2013</h3>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-2 col-sm-3 col-xs-6 rido">
+                      <div class="thumbnail">
+                        <img src="img/project.png" class="img-responsive" alt="project">
+                        <div class="caption">
+                          <h3>تقرير إفطار صائم 2013</h3>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-2 col-sm-3 col-xs-6 rido">
+                      <div class="thumbnail">
+                        <img src="img/project.png" class="img-responsive" alt="project">
+                        <div class="caption">
+                          <h3>تقرير إفطار صائم 2013</h3>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-2 col-sm-3 col-xs-6 rido">
+                      <div class="thumbnail">
+                        <img src="img/project.png" class="img-responsive" alt="project">
+                        <div class="caption">
+                          <h3>تقرير إفطار صائم 2013</h3>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-2 col-sm-3 col-xs-6 rido">
+                      <div class="thumbnail">
+                        <img src="img/project.png" class="img-responsive" alt="project">
+                        <div class="caption">
+                          <h3>تقرير إفطار صائم 2013</h3>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-2 col-sm-3 col-xs-6 rido">
+                      <div class="thumbnail">
+                        <img src="img/project.png" class="img-responsive" alt="project">
+                        <div class="caption">
+                          <h3>تقرير إفطار صائم 2013</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                 </div>
+             </div>
+         </div>
+     </div>
+</div>
+</section>
+  <!-- The sheet component -->
+  <div id="sheet" class="column items-center justify-end" aria-hidden="true">
+    <!-- Dark background for the sheet -->
+    <div class="overlay"></div>
+
+    <!-- The sheet itself -->
+    <div class="contents column">
+      <!-- Sheet controls -->
+      <header class="controls">
+        <!-- The thing to drag if you want to resize the sheet -->
+        <div class="draggable-area">
+          <div class="draggable-thumb"></div>
+        </div>
+        <!-- Button to close the sheet -->
+        <button class="close-sheet" type="button" title="Close the sheet">&times;</button>
+      </header>
+
+      <!-- Body of the sheet -->
+      <main class="body fill column">
+        <ul class="nav nav-tabs nav-justified">
+               <div class="panel-heading">
+                       <ul class="nav nav-tabs">
+                           <li class="active"><a href="#tab11default" data-toggle="tab">فاعل خير</a></li>
+                           <li><a href="#tab22default" data-toggle="tab">إنشاء حساب</a></li>
+                           <li><a href="#tab33default" data-toggle="tab">تسجيل الدخول </a></li>
+                       </ul>
+               </div>
+               <div class="panel-body">
+                   <div class="tab-content">
+                       <div class="tab-pane fade in active" id="tab11default">
+                         <!-- content of tab 1 ----------->
+                         <p>لا مانع لدي عند اختيار "فاعل خير" بعدم استقبال رسالة نصية بالتبرع أو بريد إلكتروني.</p>
+                           <input id="phone" name="phone" type="tel" class="form-control">
+                           <p class="zarbo"><span>المبلغ الكلي:</span> 30 دينار</p>
+                           <ul class="radoz">
+                              <li>
+                                <input type="radio" id="f-option" name="selector">
+                                <label for="f-option"><img src="img/visa.svg" class="v-rad"></label>
+
+                                <div class="check"></div>
+                              </li>
+
+                              <li>
+                                <input type="radio" id="s-option" name="selector">
+                                <label for="s-option"><img src="img/knet.svg" class="k-rad"></label>
+
+                                <div class="check"><div class="inside"></div></div>
+                              </li>
+
+                              <li>
+                                <input type="radio" id="t-option" name="selector">
+                                <label for="t-option"><img src="img/apple-pay.svg" class="a-rad"></label>
+
+                                <div class="check"><div class="inside"></div></div>
+                              </li>
+                            </ul>
+
+                              <button type="button" aria-controls="sheet" class="btn btn-default dont-butt tio">تمام التبرع </button>
+
+                         <!--end of content  tab1 --------->
+                        </div>
+                       <div class="tab-pane fade" id="tab22default">
+                         <!-- TAB 2 CONTENT --------->
+                         <div class="row arab">
+                           <a class="btn btn-default face-log" href="#" role="button">
+                             <i class="fa fa-facebook-square fa-2x"></i>
+                             <span>عن طريق فيسبوك </span>
+                           </a>
+                           <a class="btn btn-default goog-log" href="#" role="button">
+                             <i class="fa fa-google fa-2x"></i>
+                             <span>عن طريق جوجل </span>
+                           </a>
+                        </div>
+                        <div class="row text-center">
+                          <h2 class="awo">أو</h2>
+                          <div class="line"></div>
+                        </div>
+                        <div class="box-formoz">
+                          <form>
+                          <div class="form-group  col-md-6 col-sm-12 col-xs-12 arob">
+                            <label for="emailx">البريد الإلكتروني *</label>
+                             <input type="email" class="form-control" id="emailx" >
+                          </div>
+                          <div class="form-group col-md-6 col-sm-12 col-xs-12">
+                            <label for="passwordx">كلمة المرور *</label>
+                            <input type="password" class="form-control" id="passwordx">
+                          </div>
+                          <div class="form-group col-md-6 col-sm-12 col-xs-12 arob">
+                            <label for="namexx">اسم المتبرع</label>
+                             <input type="text" class="form-control" id="namex">
+                          </div>
+                          <div class="form-group col-md-6 col-sm-12 col-xs-12">
+                            <label for="passwordx">النوع *</label>
+                            <div class="rad-boz">
+                              <li class="radio-inline li-rad">
+                                <input type="radio" name="op1" id="male" value="option1"> ذكر
+                              </li>
+                              <li class="radio-inline li-rad">
+                                <input type="radio" name="op1" id="female" value="option2"> أنثي
+                              </li>
+                            </div>
+                          </div>
+                          <div class="form-group col-md-6 col-sm-12 col-xs-12">
+                            <label for="phonx">رقم الموبايل *</label>
+                         <input type="text" class="form-control" id="phonx">
+                          </div>
+                          <div class="form-group  col-md-6 col-sm-12 col-xs-12 bonm">
+                            <label for="exampleInputEmail1">الدولة</label>
+                            <select class="form-control">
+                              <option> إختر الدولة<i class="fa-solid fa-location-dot fa2"></i></option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                              <option>5</option>
+                            </select>
+                          </div>
+                            <div class="form-group col-md-12 col-sm-12 col-xs-12 tot-don">
+                              <p><span>المبلغ الكلي:</span> 30 دينار</p>
+                            </div>
+                            <ul class="radoz onebil">
+                               <li>
+                                 <input type="radio" id="f-option1" name="selector">
+                                 <label for="f-option1"><img src="img/visa.svg" class="v-rad"></label>
+
+                                 <div class="check"></div>
+                               </li>
+
+                               <li>
+                                 <input type="radio" id="s-option2" name="selector">
+                                 <label for="s-option2"><img src="img/knet.svg" class="k-rad"></label>
+
+                                 <div class="check"><div class="inside"></div></div>
+                               </li>
+
+                               <li>
+                                 <input type="radio" id="t-option3" name="selector">
+                                 <label for="t-option3"><img src="img/apple-pay.svg" class="a-rad"></label>
+
+                                 <div class="check"><div class="inside"></div></div>
+                               </li>
+                             </ul>
+                               <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                               <button type="button" aria-controls="sheet" class="btn btn-default dont-butt tio">تمام التبرع </button>
+                             </div>
+
+                          </form>
+
+                       </div>
+                       <!-- end of Tab 2 --------->
+                        </div>
+                        <div class="tab-pane fade" id="tab33default">
+                           <!-- content of tab 3 ----------->
+                           <div class="row arab">
+                             <a class="btn btn-default face-log" href="#" role="button">
+                               <i class="fa fa-facebook-square fa-2x"></i>
+                               <span>عن طريق فيسبوك </span>
+                             </a>
+                             <a class="btn btn-default goog-log" href="#" role="button">
+                               <i class="fa fa-google fa-2x"></i>
+                               <span>عن طريق جوجل </span>
+                             </a>
+                          </div>
+                          <div class="row text-center">
+                            <h2 class="awo">أو</h2>
+                            <div class="line"></div>
+                          </div>
+                          <div class="box-formoz">
+                            <form>
+                            <div class="form-group  col-md-6 col-sm-12 col-xs-12 arob">
+                              <label for="emailx">البريد الإلكتروني *</label>
+                               <input type="email" class="form-control" id="emailx" >
+                            </div>
+                            <div class="form-group col-md-6 col-sm-12 col-xs-12">
+                              <label for="passwordx">كلمة المرور *</label>
+                              <input type="password" class="form-control" id="passwordx">
+                            </div>
+
+                              <div class="form-group col-md-12 col-sm-12 col-xs-12 tot-don">
+                                <p><span>المبلغ الكلي:</span> 30 دينار</p>
+                              </div>
+                              <ul class="radoz onebil">
+                                 <li>
+                                   <input type="radio" id="f-option1" name="selector">
+                                   <label for="f-option1"><img src="img/visa.svg" class="v-rad"></label>
+
+                                   <div class="check"></div>
+                                 </li>
+
+                                 <li>
+                                   <input type="radio" id="s-option2" name="selector">
+                                   <label for="s-option2"><img src="img/knet.svg" class="k-rad"></label>
+
+                                   <div class="check"><div class="inside"></div></div>
+                                 </li>
+
+                                 <li>
+                                   <input type="radio" id="t-option3" name="selector">
+                                   <label for="t-option3"><img src="img/apple-pay.svg" class="a-rad"></label>
+
+                                   <div class="check"><div class="inside"></div></div>
+                                 </li>
+                               </ul>
+                                <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                 <button type="button" aria-controls="sheet" class="btn btn-default dont-butt tio">تمام التبرع </button>
+                               </div>
+
+                            </form>
+
+                         </div>
+                           <!-- end of content of tab 3 ----------->
+                        </div>
+                   </div>
+               </div>
+           </div>
+      </main>
+    </div>
+  </div>
+  <!-- line modal -->
+<div class="modal fade" id="squarespaceModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+	<div class="modal-content">
+		<div class="modal-header">
+			<button type="button" class="close clozex" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+		</div>
+		<div class="modal-body">
+
+            <!-- content goes here -->
+            <img src="img/animation_300_le65y6cl.gif" class="img-responsive">
+            <p>هنيئا لك الأجر 🎉 .. تمت الإضافة للعربة بنجاح!</p>
+
+		</div>
+	</div>
+  </div>
+</div>
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/js.js"></script>
+    <script src="js/intlTelInput.js"></script>
+    <script>
+      var input = document.querySelector("#phone");
+      window.intlTelInput(input, {
+        // allowDropdown: false,
+        // autoHideDialCode: false,
+        // autoPlaceholder: "off",
+        // dropdownContainer: document.body,
+        // excludeCountries: ["us"],
+        // formatOnDisplay: false,
+        // geoIpLookup: function(callback) {
+        //   $.get("http://ipinfo.io", function() {}, "jsonp").always(function(resp) {
+        //     var countryCode = (resp && resp.country) ? resp.country : "";
+        //     callback(countryCode);
+        //   });
+        // },
+        // hiddenInput: "full_number",
+        // initialCountry: "auto",
+        // localizedCountries: { 'de': 'Deutschland' },
+        // nationalMode: false,
+        // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+        // placeholderNumberType: "MOBILE",
+        // preferredCountries: ['cn', 'jp'],
+        // separateDialCode: true,
+        utilsScript: "js/utils.js",
+      });
+    </script>
+    <script>
+      var input = document.querySelector("#phone2");
+      window.intlTelInput(input, {
+        // allowDropdown: false,
+        // autoHideDialCode: false,
+        // autoPlaceholder: "off",
+        // dropdownContainer: document.body,
+        // excludeCountries: ["us"],
+        // formatOnDisplay: false,
+        // geoIpLookup: function(callback) {
+        //   $.get("http://ipinfo.io", function() {}, "jsonp").always(function(resp) {
+        //     var countryCode = (resp && resp.country) ? resp.country : "";
+        //     callback(countryCode);
+        //   });
+        // },
+        // hiddenInput: "full_number",
+        // initialCountry: "auto",
+        // localizedCountries: { 'de': 'Deutschland' },
+        // nationalMode: false,
+        // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+        // placeholderNumberType: "MOBILE",
+        // preferredCountries: ['cn', 'jp'],
+        // separateDialCode: true,
+        utilsScript: "js/utils.js",
+      });
+    </script>
+  </body>
+</html>
